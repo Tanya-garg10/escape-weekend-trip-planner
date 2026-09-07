@@ -1,32 +1,64 @@
-# React + TypeScript + Vite
+# Escape – Weekend Trip Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, premium‑looking single‑page web application that helps users discover and pick a perfect weekend getaway destination.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dynamic filter bar** – filter by vibes, budget, travel time and sort order.
+- **Responsive destination cards** – show image, rating, price, tags, and a quick "Explore" CTA.
+- **Saved destinations** – persists favourite trips in `localStorage`.
+- **Smooth animations** – hover effects, fade‑in cards, and heart‑pop animation when saving.
+- **Mobile‑first design** – looks great on all screen sizes.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (hooks, functional components)
+- **Vite** – fast dev server & build tool
+- **Tailwind CSS** – utility‑first styling with custom colour palette
+- **Lucide React** – lightweight icons
+- **localStorage** – simple client‑side persistence
 
-## Expanding the Oxlint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+```bash
+# Clone the repo (if you haven't already)
+git clone <repo‑url>
+cd escape
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open <http://localhost:5173> in your browser to see the app.
+
+## 📚 Project Structure
+
+```
+src/
+├─ components/      # UI components (FilterBar, DestinationCard, etc.)
+├─ data/            # Mock destination data
+├─ pages/           # Route‑level components (Home, Saved, etc.)
+├─ index.css        # Tailwind config & custom utilities
+└─ main.jsx         # App entry point
+```
+
+## 🎨 Design Highlights
+
+- **Premium colour palette** using HSL values for consistent theming.
+- **Glass‑morphism** on cards with subtle shadows.
+- **Micro‑animations** for hover, scroll‑fade, and button interactions.
+
+## 📝 Notes
+
+- This is a **frontend‑only** project – all data is static/mocked.
+- No backend, authentication, or payment integrations are included.
+
+---
+
+Made with ❤️ by the Escape team.
