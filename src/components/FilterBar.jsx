@@ -1,4 +1,6 @@
 import { SlidersHorizontal } from 'lucide-react';
+import PropTypes from 'prop-types';
+import { useFilters } from '../hooks/useFilters';
 
 const VIBES = ['Nature', 'Adventure', 'Beach', 'Culture', 'Relax'];
 const BUDGETS = [
