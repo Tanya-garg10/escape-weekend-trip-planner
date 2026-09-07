@@ -59,6 +59,4 @@ src/
 - This is a **frontend‑only** project – all data is static/mocked.
 - No backend, authentication, or payment integrations are included.
 
----
-
 Made with ❤️ by the Escape team.
